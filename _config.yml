@@ -1,0 +1,10 @@
+title: Author
+
+davenger:
+  date_format: "%b %-d, %Y"
+
+paginate: 4
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-paginate

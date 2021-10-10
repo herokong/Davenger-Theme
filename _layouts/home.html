@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class="home">
+
+    <h2 class="post-list-heading">Posts</h2>
+  
+  {%- if site.paginate -%}
+    {%- assign posts = paginator.posts -%}
+  {%- else -%}
+    {%- assign posts = site.posts -%}
+  {%- endif -%}
+  {% for post in posts %}
+  <ul class="post-list">
+    <li class="post-box"><span class="post-meta">{{ post.date | date: site.davenger.date_format }}</span>
+    <h3>
+      <a class="post-link" href="{{ post.url }}">
+        {{ post.title }}
+      </a>  
+    </h3>
+    <div>
+      <p>
+        {% assign content=post.content %}
+        {{ content | markdownify | strip_html | truncate: 150 }}
+      </p>
+    </div>
+    </li>
+  </ul>
+    {% endfor %}
+  
+    {% if site.paginate %}
+      <div class="pager">
+        <ul class="pagination">
+        {%- if paginator.previous_page %}
+          <li class="pagination-list"><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+        {%- else %}
+          <li class="pagination-list"><div class="pager-edge"><</div></li>
+        {%- endif %}
+          <li class="pagination-list"><div class="current-page">{{ paginator.page }}</div></li>
+        {%- if paginator.next_page %}
+          <li class="pagination-list"><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+        {%- else %}
+          <li class="pagination-list"><div class="pager-edge">></div></li>
+        {%- endif %}
+        </ul>
+      </div>
+    {%- endif %}
+  </div>

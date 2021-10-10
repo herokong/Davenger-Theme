@@ -1,0 +1,8 @@
+# add your new page here with a custom nav bar link to the page
+navbar_entries:
+  - title: Home
+    url: /
+
+  - title: About
+    url: about
+
