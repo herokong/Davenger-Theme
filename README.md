@@ -1,6 +1,6 @@
 # davenger
 
-Welcome to Davenger! This is a simple gem-based theme developed with Jekyll theme.
+Welcome to Davenger! This is a simple gem-based theme developed with Jekyll theme. Davenger is using a drop-in css for styling each post.
 
 <img src="https://raw.githubusercontent.com/herokong/Davenger-Theme/master/_screenshot/davenger.png"/>
 
@@ -28,7 +28,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+After installed davenger, new post can be created in `_posts`. The file name should be in YYYY-MM-DD-TITLE format.
+
+About me page can be changed with the `about.md` since `About Me` is a page with its own corresponding `layout`.
 
 ## Contributing
 
