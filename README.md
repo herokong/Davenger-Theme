@@ -1,7 +1,7 @@
 # davenger
 
 Welcome to Davenger! This is a simple gem-based theme developed with Jekyll theme.
-<img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/moonwalk.png" />
+<img src="https://raw.githubusercontent.com/herokong/Davenger-Theme/master/_screenshot/davenger.png" />
 
 ## Installation
 
