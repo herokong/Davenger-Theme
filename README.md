@@ -1,7 +1,8 @@
 # davenger
 
 Welcome to Davenger! This is a simple gem-based theme developed with Jekyll theme.
-<img src="https://raw.githubusercontent.com/herokong/Davenger-Theme/master/_screenshot/davenger.png" />
+
+<img src="https://raw.githubusercontent.com/herokong/Davenger-Theme/master/_screenshot/davenger.png"/>
 
 ## Installation
 
