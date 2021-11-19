@@ -31,17 +31,16 @@ layout: default
     {% if site.paginate %}
       <div class="pager">
         <ul class="pagination">
+          <li class="pagination-list"><div class="pager-edge">&lt;</div></li>
         {%- if paginator.previous_page %}
           <li class="pagination-list"><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
         {%- else %}
-          <li class="pagination-list"><div class="pager-edge"><</div></li>
         {%- endif %}
           <li class="pagination-list"><div class="current-page">{{ paginator.page }}</div></li>
         {%- if paginator.next_page %}
           <li class="pagination-list"><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li class="pagination-list"><div class="pager-edge">></div></li>
         {%- endif %}
+          <li class="pagination-list"><div class="pager-edge">&gt;</div></li>
         </ul>
       </div>
     {%- endif %}
